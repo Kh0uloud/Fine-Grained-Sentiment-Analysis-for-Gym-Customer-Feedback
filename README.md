@@ -4,6 +4,32 @@ Aspect-Based Sentiment Analysis (ABSA) enables a more precise evaluation by iden
 While focused on gym feedback, the approach is adaptable to any domain with customer reviews, empowering businesses to refine services, enhance marketing strategies, and optimize customer experiences.
 
 
+### **Aspect-Based Sentiment Analysis (ABSA) for Gym Reviews**
+
+#### **Project Overview**
+This project focuses on **Aspect-Based Sentiment Analysis (ABSA)** using **instruction-tuned fine-tuning** and **multi-domain training** to extract and analyze customer feedback in gym reviews. The pipeline includes:
+✅ **Aspect Term Extraction** (Instruction-Tuned Fine-Tuning)  
+✅ **Aspect Term Sentiment Classification** (Pretrained Model)  
+✅ **Aggregation of Insights Across Reviews** (Actionable Decision-Making) 
+
+---
+#### **1️⃣ Aspect Term Extraction – Instruction-Based Fine-Tuning**
+Generate a small instruction-tuned dataset (GYM dataset), Combined with SemEval datasets (Restaurants + Laptops).
+-**Instruction tuning** improves **generalization** and enhances **out-of-domain performance.**
+- **Multi-domain training** captures **aspect variations** across different contexts (e.g., **"equipment" in gyms vs. "laptops" in electronics**).
+##### **Results:**
+- **Joint training improved precision by ~10%** compared to:
+  - Cross-validation on GYM data only
+  - Training on GYM data alone
+---
+## **2️⃣ Aspect Term Sentiment Classification**
+- **Pretrained model used for sentiment classification after aspect extraction.** Given that sentiment classification is usually **more domain-agnostic** compared to aspect extraction.
+---
+#### **3️⃣ Aggregation of Insights Across All Reviews**
+- **Turning raw ABSA outputs into actionable insights for decision-making.**
+---
+
+
 
 ### Final Results of the Aspect-Based Sentiment Analysis (ABSA)
 The tables presented here provide insights into the aspects that customers noticed most, categorized by sentiment.
